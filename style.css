@@ -12,6 +12,9 @@ body{
     overflow-x:hidden;
     
 }
+@media queries screen and(max-width:550px){
+    display: grid;
+    grid-templete-column-repeat: 1, 1fr;}
 /* *********************************header*********************** */
 .header{
     display: flex;
