@@ -1,0 +1,370 @@
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* *********************************header*********************** */
+.header{
+    display: flex;
+    height:60px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    background-color:gray;
+    color:black;
+    gap: 30px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+/* *******************checkbox******************* */
+#check{
+    display: none;
+}
+.icon{
+    display: none;
+}
+#check:checked+ .menu{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 60px;
+    background-color: #fefefe;
+    width: 100%;
+    justify-content:start;
+    align-items:start;
+    left: 0px;
+    transform: translate(-50% -50%);
+}
+@media screen and (max-width: 600px){
+    .icon{
+        display:block;
+    }
+}
+
+
+.logo{
+    height: 50px;
+    border-radius:60px;
+    border: 2px solid;
+}
+.nav a{
+   padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    
+}
+.vvv{
+    display: none;
+}
+.fs-1{
+    color: black;
+}
+.fs-3{
+    color: black;
+    font-weight: 500;
+}
+.contactus{
+    padding: 10px;
+    width: 10px;
+}
+.dropdown-menu{
+    display: flex;
+    flex-flow: row wrap;
+    gap:10px;
+    background-color: black;
+    color: white;
+}
+
+.menu{
+    display: flex;
+    color:white;
+    align-items: center;
+}
+.menu> a:hover{
+    background-color: black;
+    color: white;
+}
+#dropdownMenuButton1{
+    display: end;
+    padding:0 10px;
+}
+@media screen and (min-width : 550px) {
+    .dropdown-menu{
+        display: none;
+    }
+    .nav{
+        display:none;
+    }
+}
+@media screen and (max-width: 600px)
+
+{
+    .menu{
+        display: none;
+    }
+}
+
+**********************second-slide*************************
+.grid{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    padding: 30px;
+}
+.images{
+    text-align:justify;
+    padding: 10px;
+}
+.one, .two, .three, .four{
+    width:30%;
+    display: flex;
+    grid-template-columns: repeat(4 1fr);
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   
+}
+.grid img{
+    border-radius: 50%;
+    place-items: center;
+}
+.grid h4,.grid p{
+    text-align:start;
+}
+
+.container-3{
+    height: 100vh;
+    background-image: url("https://www.tapeteos.pl/data/media/914/big/joga__yoga_035_kobieta__woda__trawa.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+/* **************3rd slide************* */
+
+.testimonial-section {
+    background-color: gray; /* Purple-blue background */
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+.testimonial-section h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.testimonial-card::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid white;
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 15px);
+}
+/* ****************4th slide**************** */
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile .name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.profile .title {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.testimonial-text {
+    font-size: 0.9em;
+}
+
+
+/* *****************5th slide************ */
+.pricing-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fefefe;
+}
+
+.pricing-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    text-align: center;
+}
+
+.plan-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.plan-title::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: black; /* Pink underline color */
+    margin: 5px auto 0;
+}
+
+.price-badge {
+    background-color: grey; /* Purple-blue color for the badge */
+    color: white;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border-radius: 12px;
+    margin: 15px 0;
+}
+
+.pricing-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+/* *****************footer************ */
+
+
+.contact-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.form-container input, 
+.form-container textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+    color: black;
+}
+
+.form-container input::placeholder, 
+.form-container textarea::placeholder {
+    color: black;
+}
+
+.form-container button {
+    padding: 10px;
+    background-color:grey; /* Pink button color */
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-container button:hover {
+    background-color: grey;
+}
+
+.info-container {
+    text-align: left;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 5px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.map-container iframe {
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contact-info img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
