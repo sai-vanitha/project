@@ -12,9 +12,7 @@ body{
     overflow-x:hidden;
     
 }
-@media queries screen and(max-width:550px){
-    display: grid;
-    grid-templete-column-repeat: 1, 1fr;}
+
 /* *********************************header*********************** */
 .header{
     display: flex;
@@ -110,7 +108,7 @@ body{
         display:none;
     }
 }
-@media screen and (max-width: 600px)
+@media screen and (max-width: 756px)
 
 {
     .menu{
@@ -124,10 +122,10 @@ body{
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     width: 100%;
-    padding: 30px;
+    padding: 130px 20px 130px 20px;
 }
 .images{
-    text-align:justify;
+    text-align:center;
     padding: 10px;
 }
 .one, .two, .three, .four{
@@ -141,14 +139,33 @@ body{
     grid-template-columns: repeat(4, 1fr);
    
 }
-.grid img{
+.grid-imges>img{
     border-radius: 50%;
     place-items: center;
+    border: 2px solid rgb(245,138,156);
 }
 .grid h4,.grid p{
     text-align:start;
 }
+@media screen and (min-width:550px)and (max-width:768px) {
+    .grid{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr) ;
+        text-align: justify;
+    }
 
+    
+ }
+ @media screen and (min-width:768px)and (max-width:1020px) {
+    .grid{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr) ;
+        text-align: justify;
+        
+    }
+    
+ }
+/* **************3rd slide************* */
 .container-3{
     height: 100vh;
     background-image: url("https://www.tapeteos.pl/data/media/914/big/joga__yoga_035_kobieta__woda__trawa.jpg");
@@ -157,7 +174,7 @@ body{
     display: grid;
     place-items: center;
 }
-/* **************3rd slide************* */
+
 
 .testimonial-section {
     background-color: gray; /* Purple-blue background */
